@@ -1,9 +1,12 @@
-<div class="card-product">
+<div class="card-trip">
   <img src=<%= movie.poster_url %>>
-  <div class="card-product-infos">
+  <div class="card-trip-infos">
     <h2><strong><%= movie.title %></strong></h2>
     <p><%= movie.rating %></p>
-    <p><%= link_to 'delete', bookmark_path(bookmark), data: { turbo_method: :delete, turbo_confirm: 'Delete this movie?' }  %></p>
     <p><%= movie.overview %></p>
+    <div class='d-flex justify-content-between align-items-center'>
+      <p><i class="fa-solid fa-angles-right"></i> <%= bookmark.comment %></p>
+      <p><%= link_to 'delete', bookmark_path(bookmark), class: 'p-2 border rounded-pill shadow-sm text-decoration-none btn btn-light align-item-center', data: { turbo_method: :delete, turbo_confirm: 'Delete this movie?' }  %></p>
+    </div>
   </div>
 </div>

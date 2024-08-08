@@ -1,13 +1,15 @@
-<div class="container">
+<div class="container m-5">
   <div class='row'>
     <div class='d-flex justify-content-between'>
       <h1>My Movie Lists</h1>
-      <%= link_to 'Create a movie list', new_list_path %>
+      <%= link_to 'Create a movie list', new_list_path, class: 'p-2 border rounded-pill shadow-sm text-decoration-none btn btn-light align-item-center'%>
     </div>
   </div>
-  <div>
+  <div class='mt-5'>
     <% @lists.each do |list| %>
-      <%= link_to list.name, list_path(list) %>
+      <h3><%= link_to list.name, list_path(list), class: 'px-5 py-2 border rounded-pill shadow-sm text-decoration-none btn btn-light align-item-center' %></h3>
     <% end %>
   </div>
 </div>
+
+<%# , class: 'border rounded shadow-sm text-decoration-none btn btn-light' %>
