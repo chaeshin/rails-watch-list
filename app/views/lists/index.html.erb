@@ -1,0 +1,13 @@
+<div class="container">
+  <div class='row'>
+    <div class='d-flex justify-content-between'>
+      <h1>My Movie Lists</h1>
+      <%= link_to 'Create a movie list', new_list_path %>
+    </div>
+  </div>
+  <div>
+    <% @lists.each do |list| %>
+      <%= link_to list.name, list_path(list) %>
+    <% end %>
+  </div>
+</div>
