@@ -8,8 +8,7 @@
   <div class='mt-5'>
     <% @lists.each do |list| %>
       <h3><%= link_to list.name, list_path(list), class: 'px-5 py-2 border rounded-pill shadow-sm text-decoration-none btn btn-light align-item-center' %></h3>
+      <%= cl_image_tag @list.photo.key, height: 300, width: 400, crop: :fill %>
     <% end %>
   </div>
 </div>
-
-<%# , class: 'border rounded shadow-sm text-decoration-none btn btn-light' %>
