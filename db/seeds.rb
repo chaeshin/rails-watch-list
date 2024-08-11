@@ -4,9 +4,9 @@
 #
 # Example:
 #
-["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
-  List.create!(name: genre_name)
-end
+# ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
+#   List.create!(name: genre_name)
+# end
 
 require 'open-uri'
 Movie.destroy_all

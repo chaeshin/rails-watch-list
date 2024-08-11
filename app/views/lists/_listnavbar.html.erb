@@ -1,0 +1,13 @@
+<div class='container-fluid bg-img'>
+  <div class='row listnavbar'>
+    <nav class='p-2 links'>
+      <p><%= link_to lists_path, class: 'm-2 shadow-lg text-decoration-none btn btn-light' do %>
+        <i class="fa-solid fa-film"></i>
+      <% end %></p>
+      <div class='d-flex'>
+        <p><%= link_to 'New List', new_list_path, class: 'm-2 p-2 border rounded-pill shadow-lg text-decoration-none btn btn-light'%></p>
+        <p><%= link_to 'My List', lists_path, class: 'm-2 p-2 border rounded-pill shadow-lg text-decoration-none btn btn-light'%></p>
+      </div>
+    </nav>
+  </div>
+</div>
