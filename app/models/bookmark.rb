@@ -1,5 +1,5 @@
 class Bookmark < ApplicationRecord
-  self.table_name = "rails_wl_bookmark"
+  self.table_name = "rails_wl_bookmarks"
   belongs_to :movie, foreign_key: "rails_wl_movie_id"
   belongs_to :list, foreign_key: "rails_wl_list_id"
 
