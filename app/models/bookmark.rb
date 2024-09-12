@@ -12,6 +12,7 @@ class Bookmark < ApplicationRecord
   def movie_id
     rails_wl_movie_id
   end
+
   def list_id
     rails_wl_list_id
   end
